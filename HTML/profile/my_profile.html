@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DigitMall</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/profile/my_profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+<!-- HEADER BEGIN -->
+<header>
+    <div class="container">
+        <div class="header-language">
+            <ul>
+                <li><a href="#">Eng</a></li>
+                <li><a href="#">Aze</a></li>
+                <li><a href="#">Rus</a></li>
+            </ul>
+        </div>
+
+        <div class="header-login">
+            <button id="login-button" onclick="location.href='login.html'">Log in</button>
+            <button id="signup-button">Sign Up</button>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="Search"><i class="fas fa-search"></i>
+        </div>
+    </div>
+</header>
+
+<!-- HEADER END -->
+
+<!-- Header2 (Logo, Cart) SECTION BEGIN -->
+<section>
+    <div class="container">
+        <div id="header2">
+
+            <div id = "logo-div">
+                <img src="../../IMG/logo2.png" height="35px" width="150px" id="logo">
+            </div>
+            <div class="user">
+                <i class="far fa-user"></i>
+            </div>
+            <div class="heart">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="notify">
+                <i class="far fa-bell"></i>
+            </div>
+            <div class="cart">
+                <img id="cart" src="../../IMG/cart3.png" width="28px" height="28px">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Header2 (Logo, Cart) SECTION ENDS -->
+
+<!-- Body SECTION BEGIN -->
+<div class="container2">
+<div class="top_prof">
+    <div class="pic_prof" id="pic_prof">
+        <!--<img id="pic_prof">-->
+    </div>
+    <div class="detail_prof">
+        <div class="name_prof" id="name_prof">
+            <p>
+                Javidan Babayev
+            </p>
+        </div>
+        <div class="sign_prof">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="setting_prof">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="info_prof">
+            <div class="info2_prof">
+                <p id="product_num">50</p> <p>products</p>
+            </div>
+            <div class="info2_prof">
+                <p id="follower_num">50</p> <p>followers</p>
+            </div>
+            <div class="info2_prof" id="following_last">
+                <p id="following_num">50</p> <p>following</p>
+            </div>
+        </div>
+    </div>
+    <div class="brand_prof">
+        <div class="brand" id="brand1">
+            <p>
+                Zara
+            </p>
+        </div>
+
+        <div class="brand" id="brand2">
+            <p>
+                Bershka
+            </p>
+        </div>
+
+        <div class="brand" id="brand3">
+            <p>
+                Nike
+            </p>
+        </div>
+
+        <div class="brand" id="brand4">
+            <p>
+                Adidas
+            </p>
+        </div>
+        <div class="arrow_right">
+            <i class="fas fa-arrow-circle-right"></i>
+        </div>
+    </div>
+    <!--<p id="brand_text"> Brands </p>-->
+</div>
+
+    <!--      --- TAB PARTS BEGIN ---    -->
+
+
+    <div class="body_profile">
+        <ul class="tabs">
+            <li class="active" rel="tab1">Products</li>
+            <li rel="tab2">Lists</li>
+            <li rel="tab3">Orders</li>
+            <li rel="tab4">Last View</li>
+        </ul>
+        <div class="tab_container">
+            <h3 class="d_active tab_drawer_heading" rel="tab1">Products</h3>
+            <div id="tab1" class="tab_content">
+                <p>You can manage your products to be public or private ( also each of product separately )</p>
+            </div>
+            <!-- #tab1 -->
+            <h3 class="tab_drawer_heading" rel="tab2">Lists</h3>
+            <div id="tab2" class="tab_content">
+                <p>Only you can see this part</p>
+                <div class="list">
+                    <ul id="list">
+                        <li id="wishlistBtn">Wishlist <i class="fas fa-trash-alt" onclick="myFunc(this)"></i> </li>
+                        <li id="clothesBtn">Clothes <i class="fas fa-trash-alt" onclick="myFunc(this)"></i> </li>
+                        <li id="ShoesBtn">Shoes <i class="fas fa-trash-alt" onclick="myFunc(this)"></i></li>
+                        <li id="beautyBtn">Beauty <i class="fas fa-trash-alt" onclick="myFunc(this)"></i></li>
+                        <li id="sportBtn">Sport <i class="fas fa-trash-alt" onclick="myFunc(this)"></i></li>
+                        <li id="technoBtn">Techno <i class="fas fa-trash-alt" onclick="myFunc(this)"></i></li>
+                        <li id="foodBtn">Food <i class="fas fa-trash-alt" onclick="myFunc(this)"></i></li>
+                    </ul>
+
+                    <div class="add">
+                        <input type="text" id="inputAdd" placeholder="Write list name here..">
+                        <button id="send">Add</button>
+                        <i class="fas fa-plus-circle" id="add-icon"></i>
+                    </div>
+                </div>
+                <div class="right_part" id="right_part">
+                    <p id="wishlist"> Wishlist </p>
+                    <div class="body_list">
+                        <p> You have no product in list. </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- #tab2 -->
+            <h3 class="tab_drawer_heading" rel="tab3">Orders</h3>
+            <div id="tab3" class="tab_content">
+                <p>Only you can see this part</p>
+            </div>
+            <!-- #tab3 -->
+            <h3 class="tab_drawer_heading" rel="tab4">Last View</h3>
+            <div id="tab4" class="tab_content">
+                <p>Only you can see this part</p>
+            </div>
+            <!-- #tab4 -->
+        </div>
+        <!-- .tab_container -->
+    </div>
+    </div>
+<!--      --- TAB PARTS END ---    -->
+
+
+<!-- Body part END -->
+
+<!-- Footer part START -->
+<footer>
+    <div class="container">
+        <div>
+            <p>Customer Service</p>
+            <h5>Contact Us</h5>
+            <h5>Order and Shipping</h5>
+            <h5>Tax Free Refund</h5>
+            <h5>Return and Refunds</h5>
+            <h5>My account</h5>
+        </div>
+        <div>
+            <p>About</p>
+            <h5>About us</h5>
+            <h5>DM Customer Promise</h5>
+            <h5>Careers</h5>
+        </div>
+        <div>
+            <p>Legal
+            <h5>Terms and Conditions</h5>
+            <h5>Privacy and Cookie Policy</h5>
+        </div>
+        <div>
+            <p>Partnership</p>
+            <h5>Become Our Partner</h5>
+            <p class="help">Help</p>
+            <h5>FAQ</h5>
+        </div>
+        <div class="last-div">
+            <p>Payment Methods</p>
+            <div class="visa">
+                <i class="fab fa-cc-visa"></i>
+            </div>
+            <div class="master-card">
+                <i class="fab fa-cc-mastercard"></i>
+            </div>
+            <div class="paypal">
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+            <div class="stripe">
+                <i class="fab fa-cc-stripe"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer part END -->
+
+<script type="text/javascript">
+    // tabbed content
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+    /* if in tab mode */
+    $("ul.tabs li").click(function() {
+
+        $(".tab_content").hide();
+        var activeTab = $(this).attr("rel");
+        $("#"+activeTab).fadeIn();
+
+        $("ul.tabs li").removeClass("active");
+        $(this).addClass("active");
+
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+
+    });
+    /* if in drawer mode */
+    $(".tab_drawer_heading").click(function() {
+
+        $(".tab_content").hide();
+        var d_activeTab = $(this).attr("rel");
+        $("#"+d_activeTab).fadeIn();
+
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(this).addClass("d_active");
+
+        $("ul.tabs li").removeClass("active");
+        $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+
+
+    /* Extra class "tab_last"
+       to add border to right side
+       of last tab */
+    $('ul.tabs li').last().addClass("tab_last");
+
+   // List JS
+
+    // All Variables
+
+    const  btnAddVl = document.querySelector('#add-icon');
+    const buttonAddText = document.getElementById('send');
+    const inputValue = document.getElementById('inputAdd');
+    const myList = document.getElementById('list');
+    const removeBtn = document.getElementsByClassName('fas');
+    const btnAddV2 = document.getElementById('wishlistBtn');
+    const rightPart = document.getElementById('right_part');
+
+
+    // Show Input
+    btnAddVl.addEventListener('click', () => {
+        if(inputValue.style.display === 'none') {
+            inputValue.style.display = 'block';
+            buttonAddText.style.display = 'block';
+            btnAddVl.classList.add('fa-minus');
+        }else {
+            inputValue.style.display = 'none';
+            buttonAddText.style.display = 'none';
+            btnAddVl.classList.remove('fa-minus');
+            btnAddVl.classList.add('fa-plus');
+        }
+    });
+
+    btnAddV2.addEventListener('click', ()=> {
+        if(rightPart.style.display === 'none') {
+            rightPart.style.display = 'block';
+            btnAddV2.style.border = '2px solid #737373';
+            btnAddV2.style.fontWeight = 'bold'}
+            else {rightPart.style.display = 'none';
+            btnAddV2.style.border = '1px solid #8c8c8c';
+            btnAddV2.style.fontWeight = 'normal'
+        }
+    });
+
+    // When click buttonAddText Add text to li
+
+    buttonAddText.addEventListener('click', () => {
+        let myNewValue = inputValue.value;
+
+        //Check if input have value or is empty
+        if(myNewValue === ""){
+
+        }else{
+            // Here will Create Li tag and add it value from input
+            let newLi = document.createElement('li');
+            let elementNew = myList.appendChild(newLi);
+            elementNew.innerHTML = myNewValue + "<i class=\"fas fa-trash-alt\" id=\"delete\" onclick=\"myFunc(this)\"></i>";
+
+            inputValue.value = "";
+
+        }
+    });
+
+
+    // Remove li from list
+
+    function myFunc(elem) {
+        let li = elem.parentNode;
+        li.parentNode.removeChild(li);
+    }
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,688 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: 15px/1.5 'Raleway', sans-serif;
+}
+.container {
+    width: 97%;
+    /* max-width: 1390px; */
+    /* overflow: hidden; */
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+.container2 {
+    width: 80%;
+    /* max-width: 1390px; */
+    /* overflow: hidden; */
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+/* Header begins (include lanugage, search, login)*/
+
+
+header {
+    background:#8c8c8c;
+    width: 100%;
+    height: 35px;
+}
+
+
+.header-language {
+    width: 200px;
+    float: left;
+    height: 35px;
+}
+
+.header-language ul {
+    margin-top: 5px;
+}
+
+.header-language ul li {
+    list-style: none;
+    display: inline;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.header-language ul li a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: white;
+}
+
+.header-language ul li a:hover {
+    color: #cefdf1;
+}
+
+.header-search {
+    float: right;
+    width: 170px;
+    position: relative;
+    right: 20px;
+    top:5px;
+}
+
+
+.header-search input {
+    width: 160px;
+    height: 20px;
+    font: 14px 'Raleway', sans-serif;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding-left: 20px;
+    outline: none;
+    /*font-weight: bold;*/
+    color: #8c8c8c;
+}
+.header-search i {
+    position:absolute;
+    font-size: 12px;
+    color: #8d939f;
+    top: 7px;
+    left: 10px;
+}
+
+.header-search input::placeholder {
+    color: #bfbfbf;
+    position: relative;
+    left: 7%;
+}
+
+.header-login {
+    padding: 8px 0;
+    font-size: 13px;
+    float: right;
+    width: 130px;
+    position: relative;
+}
+
+
+#login-button {
+    float: left;
+    width: 60px;
+    height: 100%;
+    border: none;
+    font: 13px/1.3 'Raleway', sans-serif;
+    outline: none;
+    background-color: #8c8c8c;
+    color: white;
+    font-weight: bold;
+}
+
+#login-button:hover {
+    color: #cefdf1;
+    cursor: pointer;
+
+}
+
+#signup-button {
+    float: right;
+    width: 70px;
+    height: 100%;
+    border: none;
+    border-left: 2px solid white;
+    font: 13px/1.3 'Raleway', sans-serif;
+    background-color: #8c8c8c;
+    outline: none;
+    color: white;
+    font-weight: bold;
+}
+
+#signup-button:hover {
+    color: #cefdf1;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/*  Header ends (include language, search, login)  */
+
+/*  -- Header2 (Logo, Cart) SECTION BEGIN --  */
+
+#header2 {
+    width: 100%;
+    height: 50px;
+    float: left;
+    background-color: white;
+    border-bottom:1px solid #eee;
+}
+
+#logo {
+    float: left;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+.user {
+    color: #8c8c8c;
+    float: right;
+    width: 30px;
+    font-size: 20px;
+    margin-top: 11px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.cart {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-right: 8px;
+    border-right: 1px solid #eee;
+    cursor: pointer;
+}
+.heart {
+    color: #8c8c8c;
+    float: right;
+    width: 30px;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #eee;
+    padding-right: 3px;
+    cursor: pointer;
+}
+.notify {
+    color: #8c8c8c;
+    float: right;
+    width: 30px;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #eee;
+    cursor: pointer;
+}
+
+/*  -- Header2 (Logo, Cart) SECTION END --  */
+
+/*  -- Body SECTION BEGIN --  */
+
+.top_prof {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    height: 300px;
+}
+.pic_prof {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    left:5%;
+    top: 5%;
+    border: 1px solid grey;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    background-position:50% 50%;
+    background-size:cover;
+}
+#pic_prof {
+    background-image: url("../../IMG/steve-jobs.jpg");
+}
+.detail_prof {
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+    /*border: 1px solid grey;*/
+    width: 75%;
+    height: 60%;
+}
+.name_prof {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    width: auto;
+    height: 50%;
+}
+.name_prof p {
+    color: black;
+    position: relative;
+    top: 30%;
+}
+#name_prof {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Arial, serif;
+}
+.sign_prof {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    /*border: 1px solid red;*/
+    width: 5%;
+    height: 50%;
+}
+.sign_prof i {
+    color: #00ccff;
+    font-size: 17px;
+    position: relative;
+    left: 20%;
+    top: 60%;
+}
+.setting_prof {
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+    /*border: 1px solid grey;*/
+    width: 5%;
+    height: 50%;
+}
+.setting_prof i {
+    color: #8c8c8c;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    left: 20%;
+    top: 40%;
+}
+.info_prof {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.info_prof p {
+    float: left;
+    font-family: Arial, serif;
+    font-size: 15px;
+    line-height: normal;
+}
+.info_prof #product_num, #follower_num, #following_num {
+    margin-right: 8px;
+}
+.info2_prof{
+    box-sizing: border-box;
+    float: left;
+    margin-right: 15px;
+    border-right: 1px solid #eee;
+    padding-right: 10px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+.info2_prof p {
+    padding: 0;
+    margin: 6px 0;
+}
+#following_last{
+    border: none;
+}
+.brand_prof {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 30%;
+    /*border: 1px solid red;*/
+    margin: 0;
+}
+.brand {
+    box-sizing: border-box;
+    position: relative;
+    top: 15%;
+    margin: 5px 15px;
+    float: left;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 100%;
+    background-position:50% 50%;
+    background-size: cover;
+}
+
+#brand1 {
+    background-image: url("../../IMG/zara.jpg");
+}
+#brand2 {
+    background-image: url("../../IMG/brand5.jpg");
+}
+#brand3 {
+    background-image: url("../../IMG/shoes.jpg");
+}
+#brand4 {
+    background-image: url("../../IMG/brand2.jpg");
+}
+.brand p {
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 32%;
+}
+.arrow_right {
+    color: #8c8c8c;
+    float: left;
+    padding-right: 5px;
+    font-size: 25px;
+    position: relative;
+    top: 36%;
+    left: 10px;
+    /*right: 40px;*/
+    border-right: 2px solid #eee;
+    cursor: pointer;
+}
+.top_prof #brand_text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8d939f;
+    float: left;
+    position: relative;
+    left: 15%;
+    bottom: 2px;
+}
+/*    --- TAB PARTS BEGIN ---   */
+.body_profile {
+    position: relative;
+    top: 15px;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+
+}
+ul.tabs {
+    margin: 0 0 0 300px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 32px;
+    width: auto;
+}
+
+ul.tabs li {
+    float: left;
+    margin: 0;
+    cursor: pointer;
+    padding: 0 40px;
+    height: 31px;
+    line-height: 31px;
+    color: #8d939f;
+    overflow: hidden;
+    position: relative;
+}
+
+ul.tabs li:hover {
+    cursor: pointer;
+}
+
+ul.tabs li.active {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.tab_container {
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+.tab_container p {
+    color: grey;
+    font-size: 13px;
+}
+.tab_content {
+    padding: 20px;
+    display: none;
+    }
+
+.tab_drawer_heading { display: none; }
+
+
+@media screen and (max-width: 480px) {
+    .tabs {
+        display: none;
+    }
+    .tab_drawer_heading {
+        background-color: #ccc;
+        color: #fff;
+        border-top: 1px solid #333;
+        margin: 0;
+        padding: 5px 20px;
+        display: block;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .d_active {
+        background-color: #666;
+        color: #fff;
+    }
+}
+/*    --- TAB PARTS END ---    */
+
+/*    --- List section BEGIN    ---*/
+.list {
+    /*border: 1px solid green;*/
+}
+.list ul {
+    list-style: none;
+    margin-top: 30px;
+    width: 400px;
+}
+.list ul::placeholder {
+    color: #FFF;
+    font-size: 14px;
+}
+.list .add {
+    width: 450px;
+    position: relative;
+}
+.list li {
+    background: #FFF;
+    width: 300px;
+    padding: 20px 15px;
+    border-radius: 3px;
+    border: 1px solid #8c8c8c;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    color: #6D737C;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.list .fas {
+    display: inline-block;
+    background: rgba(237,237,237,.4);
+    width: 50px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    line-height: 50px;
+    margin: -14px 0 0 0;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 350ms;
+}
+.list .fas:hover {
+    background: rgba(130,205,214,.4)
+}
+.list #inputAdd {
+    display: none;
+    width: 350px;
+    padding: 20px 0;
+    margin-top: 40px;
+    margin-left: 40px;
+    position: absolute;
+    border-radius: 3px;
+    border: 1px solid #8c8c8c;
+    background: white;
+    color: #8c8c8c;
+    font-family: 'Open sans', serif;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    text-indent: 20px;
+    transition: all 350ms;
+}
+.list #inputAdd::placeholder {
+    color: #b3b3b3;
+}
+
+.list button {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: #FFF;
+    color: #8c8c8c;
+    border-radius: 100%;
+    border: 2px solid grey;
+    position: absolute;
+    top: 45px;
+    padding: 1px;
+    right: 35px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.list #add-icon {
+    background: #8c8c8c;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-radius: 100%;
+    position: absolute;
+    font-size: 20px;
+    left: 58%;
+    transform: translateX(-50%);
+    bottom: -9px;
+    cursor: pointer;
+}
+.right_part {
+    display: none;
+    float: left;
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 485px;
+    left: 43%;
+    /*text-align: center;*/
+    border-left: 1px solid #f2f2f2;
+    border-radius: 3px;
+    padding: 0 15px 15px 20px;
+}
+#wishlist {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+}
+.right_part p {
+    font-style: italic;
+    margin-top: 0;
+}
+
+/*    --- List section END    ---*/
+
+/*  -- Body SECTION END --  */
+
+
+/*            Footer part START        */
+footer {
+    position: relative;
+    box-sizing: border-box;
+    top: 70px;
+    float: left;
+    background: #8c8c8c;
+    width: 100%;
+    padding: 30px 20px;
+    color: white;
+}
+footer .container {
+    border: none;
+}
+footer div {
+    float: left;
+    width: 18.5%;
+    height: 270px;
+    border-right: 1px solid white;
+    padding-left: 15px;
+}
+footer div:hover {
+    cursor: pointer;
+}
+footer .last-div {
+    border: none;
+    width: 18%;
+}
+footer .help {
+    margin-top: 30px;
+}
+
+footer p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer h5 {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+    margin-top: 5px;
+}
+footer h5:hover {
+    color: #b6fcea;
+}
+.last-div .visa {
+    color: white;
+    float: left;
+    width: 30px;
+    height: auto;
+    font-size: 30px;
+    padding-right: 10px;
+    padding-left: 0;
+    border: none;
+    cursor: pointer;
+}
+.last-div .master-card {
+    color: white;
+    float: left;
+    width: 30px;
+    height: auto;
+    font-size: 30px;
+    padding-right: 10px;
+    padding-left: 0;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+.last-div .paypal {
+    color: white;
+    float: left;
+    width: 30px;
+    height: auto;
+    font-size: 30px;
+    padding-right: 10px;
+    padding-left: 0;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+.last-div .stripe {
+    color: white;
+    float: left;
+    width: 30px;
+    height: auto;
+    font-size: 30px;
+    padding-right: 10px;
+    padding-left: 0;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*            Footer part END        */

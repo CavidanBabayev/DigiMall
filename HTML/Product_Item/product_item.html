@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DigitMall</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/Product_Item/product_item.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/Product_Item/xzoom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER BEGIN -->
+<header>
+    <div class="container">
+        <div class="header-language">
+            <ul>
+                <li><a href="#">Eng</a></li>
+                <li><a href="#">Aze</a></li>
+                <li><a href="#">Rus</a></li>
+            </ul>
+        </div>
+
+        <div class="header-login">
+            <button id="login-button" onclick="location.href='login.html'">Log in</button>
+            <button id="signup-button">Sign Up</button>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+</header>
+
+<!-- HEADER END -->
+
+<!-- Header2 (Logo, Cart) SECTION BEGIN -->
+<section>
+    <div class="container">
+        <div id="header2">
+
+            <div id = "logo-div">
+                <img src="../../IMG/logo2.png" height="35px" width="150px" id="logo">
+            </div>
+            <div class="user">
+                <i class="far fa-user"></i>
+            </div>
+            <div class="heart">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="notify">
+                <i class="far fa-bell"></i>
+            </div>
+            <div class="cart">
+                <img id="cart" src="../../IMG/cart3.png" width="28px" height="28px">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Header2 (Logo, Cart) SECTION ENDS -->
+
+<!-- Body part BEGIN -->
+
+<!-- Shopping part BEGIN -->
+
+<div class="container">
+
+
+    <div class="shopping-div">
+        <div class="shopping-photos">
+            <div class="shopping-img">
+                <img class="xzoom" src="../../IMG/boy.jpg" xoriginal="../../IMG/boy.jpg"/>
+
+                <div class="xzoom-thumbs">
+                    <a href="../../IMG/boy.jpg">
+                        <img class="xzoom-gallery" width="80" src="../../IMG/boy.jpg">
+                    </a>
+                    <a href="../../IMG/boy.jpg">
+                        <img class="xzoom-gallery" width="80" src="../../IMG/boy.jpg">
+                    </a>
+                    <a href="../../IMG/boy.jpg">
+                        <img class="xzoom-gallery" width="80" src="../../IMG/boy.jpg">
+                    </a>
+                    <a href="../../IMG/boy.jpg">
+                        <img class="xzoom-gallery" width="80" src="../../IMG/boy.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shopping part END -->
+
+        <!-- Shopping-detail part BEGIN -->
+        <div class="shopping-details">
+            <div class="product-detail-div">
+                <p> Product Name </p>
+            </div>
+            <div class="product-detail-div">
+                <p> Price: $60 </p>
+            </div>
+            <div class="product-detail-div">
+                <p> Color:  </p>
+                <ul class="product-color">
+                    <li>
+                        <input type="radio" name="color" id="red"/>
+                        <label for="red" style="background-color:red;"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" id="#A2C2C9"/>
+                        <label for="#A2C2C9" style="background-color:#00134d;"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" id="#EFDBD4"/>
+                        <label for="#EFDBD4" style="background-color:#EFDBD4;"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" id="#2196F3"/>
+                        <label for="#2196F3" style="background-color:#2196F3;"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" id="#4CAF50"/>
+                        <label for="#4CAF50" style="background-color:#4CAF50;"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="color" id="#00BCD4" checked="checked"/>
+                        <label for="#00BCD4" style="background-color:#00BCD4;"></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-detail-div">
+                <p> Size:  </p>
+                <label>
+                    <select class="size">
+                        <option value="">Choose size</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                        <option value="xxxl">XXXL</option>
+                    </select>
+                </label>
+            </div>
+            <div class="product-detail-div">
+                <p> Quantity:  </p>
+                <div class="quantity">
+                    <img id="minus" src="../../IMG/minus.svg" width="15px" height="15px">
+                    <label for="quant"></label><input id="quant" name="quant" type="text" value=0 size=1>
+                    <img id="plus" src="../../IMG/plus1.svg" width="15px" height="15px">
+                </div>
+            </div>
+            <div class="product-button">
+                <button> Add to Cart</button>
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Shopping-detail part END -->
+
+<!--      --- TAB PARTS BEGIN ---    -->
+
+<div class="container2">
+<div class="body_profile">
+    <ul class="tabs">
+        <li class="active" rel="tab1">Specification</li>
+        <li rel="tab2">Review</li>
+        <li rel="tab3">Delivery</li>
+        <li rel="tab4">Refund Policy</li>
+    </ul>
+    <div class="tab_container">
+        <h3 class="d_active tab_drawer_heading" rel="tab1">Specification</h3>
+        <div id="tab1" class="tab_content">
+            <p>You can manage your products to be public or private ( also each of product separately )</p>
+        </div>
+        <!-- #tab1 -->
+        <h3 class="tab_drawer_heading" rel="tab2">Review</h3>
+        <div id="tab2" class="tab_content">
+            <p>Only you can see this part</p>
+        </div>
+        <!-- #tab2 -->
+        <h3 class="tab_drawer_heading" rel="tab3">Delivery</h3>
+        <div id="tab3" class="tab_content">
+            <p>Only you can see this part</p>
+        </div>
+        <!-- #tab3 -->
+        <h3 class="tab_drawer_heading" rel="tab4">Refund Policy</h3>
+        <div id="tab4" class="tab_content">
+            <p>Only you can see this part</p>
+        </div>
+        <!-- #tab4 -->
+    </div>
+    <!-- .tab_container -->
+</div>
+</div>
+<!--      --- TAB PARTS END ---    -->
+
+
+<!-- Body part END -->
+
+<!-- Footer part START -->
+<footer>
+    <div class="container">
+        <div>
+            <p>Customer Service</p>
+            <h5>Contact Us</h5>
+            <h5>Order and Shipping</h5>
+            <h5>Tax Free Refund</h5>
+            <h5>Return and Refunds</h5>
+            <h5>My account</h5>
+        </div>
+        <div>
+            <p>About</p>
+            <h5>About us</h5>
+            <h5>DM Customer Promise</h5>
+            <h5>Careers</h5>
+        </div>
+        <div>
+            <p>Legal
+            <h5>Terms and Conditions</h5>
+            <h5>Privacy and Cookie Policy</h5>
+        </div>
+        <div>
+            <p>Partnership</p>
+            <h5>Become Our Partner</h5>
+            <p class="help">Help</p>
+            <h5>FAQ</h5>
+        </div>
+        <div class="last-div">
+            <p>Payment Methods</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer part END -->
+
+<script src="../../JS/xzoom.js"></script>
+<script type="text/javascript">
+
+    $(function() {
+        $(".xzoom, .xzoom-gallery").xzoom({tint: '#333', Xoffset: 15});
+    });
+    $(document).ready(function() {
+        let qty = 0;
+        $("#plus").click(function() {
+            qty ++;
+            $("#quant").val(qty);
+        });
+        $("#minus").click(function() {
+            if (qty > 0) {
+                qty --;
+                $("#quant").val(qty);
+            }
+        });
+
+        $("#info").click(function() {
+            $("#pop").show("fast");
+            $("#main").hide("fast");
+        });
+
+        $("#close").click(function() {
+            $("#pop").hide("fast");
+            $("#main").show("fast");
+        })
+
+    });
+
+        // tabbed content
+
+        $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+    /* if in tab mode */
+    $("ul.tabs li").click(function() {
+
+        $(".tab_content").hide();
+        var activeTab = $(this).attr("rel");
+        $("#"+activeTab).fadeIn();
+
+        $("ul.tabs li").removeClass("active");
+        $(this).addClass("active");
+
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+
+    });
+    /* if in drawer mode */
+    $(".tab_drawer_heading").click(function() {
+
+        $(".tab_content").hide();
+        var d_activeTab = $(this).attr("rel");
+        $("#"+d_activeTab).fadeIn();
+
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(this).addClass("d_active");
+
+        $("ul.tabs li").removeClass("active");
+        $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+
+
+    /* Extra class "tab_last"
+       to add border to right side
+       of last tab */
+    $('ul.tabs li').last().addClass("tab_last");
+
+
+</script>
+</body>
+</html>
